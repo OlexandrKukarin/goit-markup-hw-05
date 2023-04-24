@@ -32,7 +32,7 @@
           >
           <ul class="list navigation">
             <li class="item">
-              <a href="./index.html" class="link-nav link">Studio</a>
+              <a href="./index.html" class="link-nav current link">Studio</a>
             </li>
             <li class="item">
               <a href="./portfolio.html" class="link-nav link">Portfolio</a>
@@ -61,7 +61,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="btn">Order Service</button>
+          <button type="button" class="btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- H2 -->
@@ -426,5 +428,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-cls" data-modal-close>
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-krest"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
